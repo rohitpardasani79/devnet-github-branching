@@ -14,6 +14,7 @@ def connect_to_router(router):
     print(f"Connection to {router['hostname']} successful!")
     print("-" * 40)
 
+
 routers = load_router_details('routers.yaml')['routers']
 for router in routers:
     connect_to_router(router)
